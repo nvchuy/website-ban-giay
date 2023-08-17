@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Login | SneakerLuxe</title>
+<head th:replace="~{/commons/head}">
+</head>
+<head>
+    <link th:href="@{/css/login.css}" rel="stylesheet">
+</head>
+<body>
+<header th:replace="~{/commons/header}">
+</header>
+
+<section id="form" class="animate"><!--form-->
+    <div class="container">
+        <div class="row">
+            <div class="login-page ">
+                <div class="form">
+                    <form class="login-form justify-content-center" th:action="@{/do-login}" method="post">
+                        <div class="text-center">
+                            <h1 id="login_title">ĐĂNG NHẬP</h1>
+                        </div>
+                        <input id="login-name" class="login_input" type="text" name="username" placeholder="Name" />
+                        <input id="login-pwd" class="login_input" type="password" name="password" placeholder="Password" />
+                        <div class="row">
+                            <div class="col-6 pull-left .visible-*-inline-block">
+                                <input id="zeZ3hL" type="checkbox" /><label id="vsSUK6" for="zeZ3hL">Keep me sign in</label>
+                            </div>
+                            <div class="col-6 pull-right .visible-*-inline-block">
+                                <p class="message">Not registered? <a th:href="@{/auth/register}">Create an account</a></p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button id="login-btn" type="submit">login</button>
+                        </div>
+                        <div th:if = "${param.error}" class="alert alert-danger text-center">
+                            Invalid username or password
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--/form-->
+
+<footer th:replace="~{/commons/footer}">
+</footer>
+</body>
+</html>

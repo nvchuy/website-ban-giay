@@ -1,0 +1,129 @@
+.login-page {
+    width: 40%;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
+.form .login-form input,
+.register-form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 30px;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#zeZ3hL {
+    /*For FF 3+, FF for Android 4+*/
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+#vsSUK6 {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.form #login-btn,
+#create-btn {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 30px;
+    padding: 15px 60px;
+    color: #000;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.form .login-form button:hover,
+.form .login-form button:active,
+.form .login-form button:focus,
+.form .register-form button:hover,
+.form .register-form button:active,
+.form .register-form button:focus {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+
+.form .message {
+    /* margin: 15px 0 0; */
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.form .message a {
+     color: #FE980F;
+    text-decoration: none;
+}
+.form .message a:hover {
+    color: #fdb45e;
+}
+#login_title {
+    color: #FE980F;
+    text-shadow: 3px 3px 3px #000000;
+}
+#login_title:hover {
+    color: #fdb45e;
+}
+.form .register-form {
+    display: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate {
+    animation-duration: 0.8s;
+    animation-name: fadeIn;
+    animation-fill-mode: backwards;
+}
+#login-name, #login-pwd {
+    font-size: 18px;
+    text-shadow: 3px 3px 3px #D3D3D3;
+}
+#login-name:hover {
+    font-size: 18px;
+    text-shadow: 3px 3px 3px #D3D3D3;
+    transform: scale(1.02);
+    transition: transform 0.1s ease-in-out;
+}
+#login-pwd:hover {
+    font-size: 18px;
+    text-shadow: 3px 3px 3px #D3D3D3;
+    transform: scale(1.02);
+    transition: transform 0.1s ease-in-out;
+}
+#login-name, #login-pwd::placeholder {
+    font-size: 18px;
+    text-shadow: 3px 3px 3px #D3D3D3;
+}
+#login-btn {
+    color: #FE980F;
+    font-size: 20px;
+    font-weight: 400;
+    box-shadow: 6px 6px 3px #000000;
+}
+#login-btn:hover {
+    color: #fdb45e;
+}
+.login_input {
+    box-shadow: 6px 6px 3px #000000;
+}
